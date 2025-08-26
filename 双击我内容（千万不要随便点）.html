@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给你的艺术作品</title>
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 p5.js 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- 引入 p5.dom.js 库，用于处理DOM元素 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+    <!-- 引入 Google Fonts 的字体，增加艺术感 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- 引入我们的核心脚本 -->
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <!-- 这是一个空的div，p5.js的canvas会生成在这里面 -->
+    <div id="canvas-container"></div>
+    
+    <!-- 这个div用于显示告白文字 -->
+    <div id="confession-text" class="hidden">
+        <p>我好想去宁波见你呀！</p>
+        <p>笨蛋柴郡~</p>
+        <p>我喜欢你。</p>
+    </div>
+</body>
+</html>

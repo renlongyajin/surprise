@@ -1,0 +1,45 @@
+body {
+    background-color: #121212; /* 深色背景，突出光点效果 */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 防止出现滚动条 */
+    font-family: 'Playfair Display', serif;
+    color: #d75b5b; /* 告白文字的颜色 */
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+canvas {
+    display: block; /* 移除canvas下方的空白 */
+}
+
+#confession-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5em; /* 字体大小 */
+    line-height: 1.5;
+    z-index: 2; /* 确保文字在canvas之上 */
+    opacity: 0; /* 初始状态为完全透明 */
+    transition: opacity 2s ease-in; /* 平滑淡入效果 */
+}
+
+#confession-text.visible {
+    opacity: 1; /* 告白时显示 */
+}
+
+/* 手机端字体适配 */
+@media (max-width: 600px) {
+    #confession-text {
+        font-size: 1.5em;
+    }
+}
