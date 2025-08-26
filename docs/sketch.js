@@ -66,7 +66,7 @@ function setup() {
     // ---- 重点修改：直接通过代码生成爱心图案的坐标点 ----
     // 这段代码不再依赖外部图片，确保在离线状态下也能正常运行
     // 调整 scale 参数，将爱心缩小
-    const heartPoints = generateHeartPoints(40);
+    const heartPoints = generateHeartPoints(25);
     for (let p of heartPoints) {
         // 将爱心坐标点转换为粒子目标点
         targetPoints.push({
